@@ -26,8 +26,9 @@ No external packages are required.
 1. Open Instagram.
 2. Go to **Settings** > **Accounts Center** > **Your information and permissions** > **Download your information**.
 3. Request a download in **JSON** format.
-4. After the export is ready, extract the ZIP file.
-5. Copy these files into this project folder:
+4. Make sure the Date Range is **All Time**
+5. After the export is ready, extract the ZIP file.
+6. Copy these files into this project folder:
    - `following.json`
    - `followers_1.json`
 
@@ -60,17 +61,3 @@ Your Instagram export files contain personal account data.
 
 - Do not commit your real `following.json` and `followers_1.json` files to a public repository.
 - Consider adding them to `.gitignore` before pushing to GitHub.
-
-## Optional .gitignore
-
-If you want to keep your data private, create a `.gitignore` file with:
-
-```gitignore
-following.json
-followers_1.json
-followers_*.json
-```
-
-## License
-
-You can add any license you prefer (for example MIT).
